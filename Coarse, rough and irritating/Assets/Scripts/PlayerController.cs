@@ -8,9 +8,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool pawnSelected;
+    public GameObject pawn;
+
     private InputAction move;
-    [SerializeField]
-    private bool pawnSelected;
 
     [SerializeField]
     private PlayerInputActions inputActions;
@@ -18,8 +19,6 @@ public class PlayerController : MonoBehaviour
     private GameObject vCam;
     [SerializeField]
     private float speed, cameraSpeed;
-    [SerializeField]
-    private GameObject pawn;
 
     public void SelectPawn(GameObject newPawn)
     {
